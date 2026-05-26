@@ -30,10 +30,18 @@ public class AsciiArt {
 
     private static void mostrarArteMovimiento(String movimiento) {
         switch (movimiento) {
-            case "piedra" -> System.out.println("   _______\n  /      /,\n /      //\n(______(/\n");
-            case "papel" -> System.out.println("  _______\n /      /\\\n/      /  \\\n\\_____/___/\n");
-            case "tijera" -> System.out.println("   _    _\n  ( \\__/ )\n   \"  /  \n  /     \\\n(_/\\/\\_)");
-            default -> System.out.println("Movimiento desconocido.");
+            case "piedra":
+                System.out.println("   _______\n  /      /,\n /      //\n(______(/\n");
+                break;
+            case "papel":
+                System.out.println("  _______\n /      /\\\n/      /  \\\n\\_____/___/\n");
+                break;
+            case "tijera":
+                System.out.println("   _    _\n  ( \\__/ )\n   \"  /  \n  /     \\\n(_/\\/\\_)");
+                break;
+            default:
+                System.out.println("Movimiento desconocido.");
+                break;
         }
     }
 }
