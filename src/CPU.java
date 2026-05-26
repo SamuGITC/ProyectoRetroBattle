@@ -4,6 +4,6 @@ public class CPU extends Jugador {
     }
 
     public void seleccionarMovimiento() {
-        // Selección de movimiento de la CPU.
+        // Seleccion de movimiento de la CPU.
     }
 }
