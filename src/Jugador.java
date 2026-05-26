@@ -1,6 +1,8 @@
+
 public class Jugador {
-    private String nombre;
+    private final String nombre;
     private int vidas;
+    private String eleccionActual;
 
     public Jugador(String nombre, int vidas) {
         this.nombre = nombre;
@@ -19,5 +21,23 @@ public class Jugador {
         if (vidas > 0) {
             vidas--;
         }
+    }
+
+    public void curarVidas(int cantidad) {
+        if (cantidad > 0) {
+            vidas += cantidad;
+        }
+    }
+
+    public boolean estaVivo() {
+        return vidas > 0;
+    }
+
+    public String getEleccionActual() {
+        return eleccionActual;
+    }
+
+    public void setEleccionActual(String eleccionActual) {
+        this.eleccionActual = eleccionActual;
     }
 }

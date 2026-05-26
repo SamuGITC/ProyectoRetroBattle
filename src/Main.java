@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Bienvenido a RetroBattle");
-        // Aquí comienza el juego.
+        Juego juego = new Juego();
+        juego.iniciar();
     }
 }

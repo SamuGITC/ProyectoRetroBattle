@@ -10,7 +10,6 @@ public class CPU extends Jugador {
     }
 
     public void seleccionarMovimiento() {
-        int indice = random.nextInt(OPCIONES.length);
-        setEleccionActual(OPCIONES[indice]);
+        // Selecci�n de movimiento de la CPU.
     }
 }
