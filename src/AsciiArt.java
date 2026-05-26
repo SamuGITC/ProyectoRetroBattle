@@ -1,3 +1,5 @@
+import java.util.Random;
+import java.util.random.*;
 public class AsciiArt {
     public static void mostrarLogo() {
         System.out.println("======================================");
@@ -29,6 +31,14 @@ public class AsciiArt {
     }
 
     private static void mostrarArteMovimiento(String movimiento) {
+
+        if(movimiento == null){
+            System.out.println("Movimiento desconocido");
+            return;
+        }
+
+
+
         switch (movimiento) {
             case "piedra":
                 System.out.println("   _______\n  /      /,\n /      //\n(______(/\n");
@@ -39,7 +49,7 @@ public class AsciiArt {
             case "tijera":
                 System.out.println("   _    _\n  ( \\__/ )\n   \"  /  \n  /     \\\n(_/\\/\\_)");
                 break;
-            default:
+        default:
                 System.out.println("Movimiento desconocido.");
                 break;
         }
